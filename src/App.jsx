@@ -22,6 +22,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/resume" element={<ResumePage />} />
         </Routes>
@@ -32,3 +33,4 @@ function App() {
 }
 
 export default App;
+
