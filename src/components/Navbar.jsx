@@ -15,7 +15,6 @@ const Navbar = () => {
       name: "Home",
       icon: <HomeIcon className="inline h-4 w-4" />,
       href: "/home",
-      action: () => window.location.reload(), // This will reload the page on 'Home' click
     },
     {
       name: "Certifications",
@@ -45,7 +44,6 @@ const Navbar = () => {
                 </span>
                 <Link
                   to={item.href}
-                  onClick={item.name === "Home" ? item.action : undefined} // Reload only when 'Home' is clicked
                   className="text-neutral-300 cursor-pointer font-normal group-hover:text-transparent group-hover:bg-clip-text hover:bg-gradient-to-r from-red-400 to-red-800 transition duration-300 ease-in-out hover:font-medium"
                 >
                   {item.name}
@@ -75,7 +73,6 @@ const Navbar = () => {
                   </span>
                   <Link
                     to={item.href}
-                    onClick={item.name === "Home" ? item.action : undefined} // Reload on 'Home' click in mobile drawer as well
                     className="hover:bg-gradient-to-r hover:from-red-400 hover:to-red-800 hover:text-transparent hover:bg-clip-text text-neutral-400"
                   >
                     {item.name}
