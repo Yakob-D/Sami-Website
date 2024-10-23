@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-5 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 py-2 backdrop-blur-md">
       <div className="container px-4 mx-auto relative text-md">
         <div className="flex justify-between lg:justify-center items-center">
           <ul className="hidden lg:flex space-x-24 items-center">
